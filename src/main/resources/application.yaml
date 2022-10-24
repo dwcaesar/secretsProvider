@@ -1,0 +1,8 @@
+secrets-provider:
+  update-intervall: 24 # in hours
+  type: local
+  local:
+    path: "./secrets.properties"
+  aws:
+    region-name: "eu-central-1"
+    application-name: "my-demo-application"

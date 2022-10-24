@@ -1,7 +1,12 @@
 package de.wohlers.secretsprovider;
 
-public class Main {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SecretsProviderApplication {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(SecretsProviderApplication.class, args);
     }
 }

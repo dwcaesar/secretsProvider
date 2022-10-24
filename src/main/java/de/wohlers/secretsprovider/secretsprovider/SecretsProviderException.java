@@ -7,10 +7,6 @@ public class SecretsProviderException extends RuntimeException {
 
     private final Reason reason;
 
-    public SecretsProviderException(Reason reason) {
-        this(null, reason);
-    }
-
     public SecretsProviderException(String message, Reason reason) {
         this(message, reason, null);
     }
@@ -21,6 +17,6 @@ public class SecretsProviderException extends RuntimeException {
     }
 
     public enum Reason {
-        NO_CONFIGURATION
+        INVALID_SOURCE, INVALID_CONFIG, NO_CONFIGURATION
     }
 }
